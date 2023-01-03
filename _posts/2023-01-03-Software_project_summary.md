@@ -2,8 +2,7 @@
 layout: post
 title: 软工项目心得
 date: 2023-01-03
-Author: Ursula
-categories: 
+Author: Ursula 
 tags: [sample, document]
 comments: true
 --- 

@@ -3,11 +3,9 @@ layout: post
 title: 软工项目心得
 date: 2023-01-03
 Author: Ursula 
-tags: [sample, document]
+tags: [Django，项目]
 comments: true
 --- 
-
-# 软工项目心得（主要是Django上手教程）
 
 <font color='blue'>**软工鸡汤**：千万不要从第一行代码开始写项目，复用好框架和参考项目，让你事半功倍</font>
 

@@ -84,28 +84,28 @@ urls.py文件中编写路由，建立从url（网址）到HTML文件（路径）
 views.py文件中编写与前端和后端交互的逻辑（从前端读数据，处理一下给后端）
 
 
-Django的html中有一个特殊的块标签{% %}
+Django的html中有一个特殊的块标签`{% %}`
 
 ```html
-{% extends 'master.html' %} <!-- 表示模板继承 -->
-{% block title %}老男孩管理{% endblock %} <!-- 标签标题 -->
-{% block content %} <!-- 内容 -->
-    <ul>
-    {% for i in list %}
-        <li>{{ i }}</li>
-    {% endfor %}
-    </ul>
+    {% extends 'master.html' %} <!-- 表示模板继承 -->
+    {% block title %}老男孩管理{% endblock %} <!-- 标签标题 -->
+    {% block content %} <!-- 内容 -->
+        <ul>
+        {% for i in list %}
+            <li>{{ i }}</li>
+        {% endfor %}
+        </ul>
 
-{% endblock %}
+    {% endblock %}
 
-<!-- 判断逻辑模板 -->
-{% if user.is_authenticated %}
-{% ifequal n1 n2 %}
-...代码块1
-{% else %}
-...代码块2
-{% endifequal %}
-```
+    <!-- 判断逻辑模板 -->
+    {% if user.is_authenticated %}
+    {% ifequal n1 n2 %}
+    ...代码块1
+    {% else %}
+    ...代码块2
+    {% endifequal %}
+    ```
 
 #### 表单
 

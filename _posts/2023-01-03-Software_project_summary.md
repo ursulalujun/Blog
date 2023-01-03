@@ -83,29 +83,8 @@ urls.py文件中编写路由，建立从url（网址）到HTML文件（路径）
 
 views.py文件中编写与前端和后端交互的逻辑（从前端读数据，处理一下给后端）
 
+![image](https://user-images.githubusercontent.com/73097943/210301485-d94b0dbb-172c-4f23-9349-e97be09aa07c.png)
 
-Django的html中有一个特殊的块标签`{% %}`
-
-```html
-    {% extends 'master.html' %} <!-- 表示模板继承 -->
-    {% block title %}老男孩管理{% endblock %} <!-- 标签标题 -->
-    {% block content %} <!-- 内容 -->
-        <ul>
-        {% for i in list %}
-            <li>{{ i }}</li>
-        {% endfor %}
-        </ul>
-
-    {% endblock %}
-
-    <!-- 判断逻辑模板 -->
-    {% if user.is_authenticated %}
-    {% ifequal n1 n2 %}
-    ...代码块1
-    {% else %}
-    ...代码块2
-    {% endifequal %}
-    ```
 
 #### 表单
 
@@ -142,18 +121,7 @@ field.errors展示的报错提示是在模型中定义的error_message字段
 
 2. 使用bootstrap组件，在表单HTML中加上
 
-```html
-{% if form.errors %}
-<p>请修改以下错误：</p>
-{% for field in form %}
-{% if field.errors %}
-<div class="alert alert-primary" role="alert">
-  {{ field.label }}: {{ field.errors|striptags }}
-</div>
-{% endif %}
-{% endfor %}
-{% endif %}
-```
+![image](https://user-images.githubusercontent.com/73097943/210301569-f1b1d3b6-eaf4-4722-8b42-8231e9b64269.png)
 
 除了在模型中定义error_message，也可以在view.py的函数中定义message
 
@@ -163,15 +131,7 @@ messages.success(request,"宝贝已在心愿清单中了哟")
 
 再在HTML文件中使用
 
-```HTML
-{% if messages %}
-    <div class="alert alert-warning" alert-{{ message.tags }}" role="alert">
-        {% for message in messages  %}
-          {{message|safe}} 
-        {% endfor %}
-    </div>
-{% endif %}
-```
+![image](https://user-images.githubusercontent.com/73097943/210301648-119f3781-4271-4742-b3f7-c971725467a3.png)
 
 
 ### 管理界面

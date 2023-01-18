@@ -38,7 +38,9 @@ self.classifier = nn.Sequential(
 
 ### critrion BCE
 nn.BCELoss()
+
 nn.BCEWithLogitsLoss() 自带Sigmoid
+
 这两个函数在计算时都有对p增或减一个较小值防止p=0或1时出现无穷大
 
 ## Tricks
@@ -46,10 +48,37 @@ nn.BCEWithLogitsLoss() 自带Sigmoid
 ### large kernel
 
 ### TTA
+flip 翻转
+
+shift 平移
+
+masking 遮住图像的一部分
+
+```python
+transforms_time_mask = nn.Sequential(torchaudio.transforms.TimeMasking(time_mask_param=10))
+
+transforms_freq_mask = nn.Sequential(torchaudio.transforms.FrequencyMasking(freq_mask_param=10))
+
+# horizontal flip
+img = np.flip(img, axis=1).copy()
+# vertical flip
+img = np.flip(img, axis=2).copy()
+# vertical shift
+img = np.roll(img, np.random.randint(low=0, high=img.shape[1]), axis=1)
+
+# tima masking
+img = transforms_time_mask(img)
+# frequency masking
+img = transforms_freq_mask(img)
+```
+
+了解更多Augmentation方法可见[博客](https://zhuanlan.zhihu.com/p/41679153)及[论文](https://arxiv.org/abs/1904.08779)
 
 ## 好用的库
 1. TIMM 计算机视觉模型库
 2. optuna 参数调优库
 3. wandb 在线可视化库
 
-
+## Master的黑魔法
+Random Search，除梯度下降以外的另一种多元最优化方法
+https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/376233

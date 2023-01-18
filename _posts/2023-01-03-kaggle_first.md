@@ -1,0 +1,55 @@
+---
+layout: post
+title: Kaggle第一次比赛心得
+date: 2023-01-03
+Author: Ursula
+tags: [Kaggle, DL]
+comments: true
+--- 
+
+# 新手避雷
+1. 在未组队的情况下私下共享资料属于违规行为，组队截止时间过后尤其不能这样
+2. 提交notebook的时候，kaggle的服务器只能找到前两个输出文件，所以一定要把你要提交的文件放在前两个（我们就是犯了这个错误，痛失银牌:cry: :cry:
+3. 防shake，一般来说，ensemble效果差不多而原理不同的模型，既可以提升LB分数，又能防shake，但是加权的weight不要调的过于仔细，否则很可能会过拟合LB
+
+
+# G2Net Detecting Continuous Gravitational Waves
+
+这场比赛的重点在生成训练数据和噪声处理，模型大家基本都是调用TIMM库，使用efficientNet和Inception，模型和训练方面用到的trick用不多
+
+比赛的收获
+- 熟悉kaggle的使用
+- 了解比赛规则
+- 找到了几个优雅的深度学习的代码模板
+  [like this](https://www.kaggle.com/code/batprem/inception-v4-score-boost)
+
+
+## 分类模型
+
+### Model
+Model = encoder+classifier 输出为属于某类的概率，0~1
+
+```python
+self.classifier = nn.Sequential(
+            nn.Linear(n_features, n_class, bias=True),
+            nn.Sigmoid() ## nn.Softmax() 多分类
+            )
+```
+
+### critrion BCE
+nn.BCELoss()
+nn.BCEWithLogitsLoss() 自带Sigmoid
+这两个函数在计算时都有对p增或减一个较小值防止p=0或1时出现无穷大
+
+## Tricks
+
+### large kernel
+
+### TTA
+
+## 好用的库
+1. TIMM 计算机视觉模型库
+2. optuna 参数调优库
+3. wandb 在线可视化库
+
+

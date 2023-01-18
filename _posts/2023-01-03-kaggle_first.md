@@ -81,4 +81,5 @@ img = transforms_freq_mask(img)
 
 ## Master的黑魔法
 Random Search，除梯度下降以外的另一种多元最优化方法
+
 https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/376233

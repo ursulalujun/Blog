@@ -80,6 +80,8 @@ img = transforms_freq_mask(img)
 3. wandb 在线可视化库
 
 ## Master的黑魔法
-Random Search，除梯度下降以外的另一种多元最优化方法
+1. Random Search，除梯度下降以外的另一种多元最优化方法
+2. 发现噪声服从chi分布，尝试生成和测试数据类似的噪声
+3. AE denoising based pretraining
 
 https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/376233

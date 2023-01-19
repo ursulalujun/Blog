@@ -82,6 +82,6 @@ img = transforms_freq_mask(img)
 ## Master的黑魔法
 1. Random Search，除梯度下降以外的另一种多元最优化方法
 2. 发现噪声服从chi分布，尝试生成和测试数据类似的噪声
-3. AE denoising based pretraining
+3. [AE denoising](https://blog.csdn.net/qq_37524214/article/details/107415974) based pretraining
 
 https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/discussion/376233

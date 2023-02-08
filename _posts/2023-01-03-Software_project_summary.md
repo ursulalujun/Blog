@@ -5,6 +5,7 @@ date: 2023-01-03
 Author: Ursula 
 tags: [Django, 项目]
 comments: true
+toc: true
 --- 
 
 <font color='blue'>软工鸡汤：千万不要从第一行代码开始写项目，复用好框架和参考项目，让你事半功倍</font>

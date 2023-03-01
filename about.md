@@ -4,11 +4,15 @@ title: 关于
 permalink: /about/
 ---
 
-# 欢迎来到Ursula的个人主页
+# 欢迎来到Ursula的个人博客
 
-计算机专业在读本科生一枚，正在努力学习machine learning
+计算机专业在读本科生一枚，正在努力学习专业课，兼修灌水炼丹
 
-# 仓库中的内容
+博客内容主要是码农心得和读书笔记，欢迎大家阅读和评论
+
+可以到第一个留言板写下想对我说的话:rose::rose:
+
+# GitHub仓库中的内容
 
 ## UESTC课程笔记
 
@@ -29,8 +33,14 @@ permalink: /about/
 
 -基于区块链技术的加密即时通讯软件
 
-博客内容主要是机器学习的学习笔记、课程中的知识整理、项目开发中的经验总结。
-
 ## 综合课程设计
 
 应用层HTTP协议还原系统
+
+## 软件工程课程项目
+
+P2P校园交易平台（基于Django框架）
+
+比心心:heart::heart:
+
+![image](https://user-images.githubusercontent.com/73097943/222032761-20e66e88-6ceb-4c80-a237-715d5ccfc9e7.png)

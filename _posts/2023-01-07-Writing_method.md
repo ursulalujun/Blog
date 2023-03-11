@@ -3,7 +3,7 @@ layout: post
 title: SCI论文写作技巧
 date: 2023-01-07
 Author: Ursula
-tags: [Essay]
+tags: [论文]
 comments: true
 --- 
 

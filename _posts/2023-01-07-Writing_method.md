@@ -10,7 +10,7 @@ comments: true
 写在前面：根据我的两次写SCI论文的经历
 
 ### Abstract
-Background + method + results + （conclusion）
+Background + method + results + conclusion
 
 最重要的是清晰地写出<font color='red'>核心创新点</font>，解决了什么问题，和前人方法的不同
 
@@ -19,7 +19,7 @@ Background + method + results + （conclusion）
 1. 课题背景介绍 
 2. 现有方法及其不足（根据篇幅追溯一到三个阶段的发展即可，不要转折太多次，Traditional method ..., Recently, ....However, ...）
 3. 我们的方法解决了什么不足，怎么想到这么做的（Motivation），怎么解决的（概括下做了什么）
-4. 贡献
+4. 贡献，还可以概述一下每个section主要写什么
 
 introduction和abstract不要太繁琐，不要有对方法的描述，可以泛泛一点，但要逻辑清晰，重点突出，且让人找不出错误
 

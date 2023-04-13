@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 关于
-comments: true
 permalink: /about/
 ---
 
@@ -10,8 +9,6 @@ permalink: /about/
 末韭计算机专业本科生一枚，正在努力学习专业课，兼修灌水炼丹
 
 博客内容主要是码农心得和读书笔记，欢迎大家阅读和评论~
-
-下方的评论区是一个留言板，友友们可以写下想对我说的话
 
 也欢迎到[github](https://github.com/ursulalujun)找我玩
 
@@ -22,7 +19,7 @@ permalink: /about/
 
 ## UESTC课程笔记
 
-传送门：https://github.com/ursulalujun/UESTCnote
+[传送门](https://github.com/ursulalujun/UESTCnote)
 
 除了笔记还包含课堂练习、作业、课后习题答案、教材电子书、期末复习的PPT、实验的源代码和报告
 

@@ -7,7 +7,7 @@ tags: [论文]
 comments: true
 --- 
 
-写在前面：根据我的两次写SCI论文的经历
+写在前面：根据我的两次写SCI论文的经历总结出的一点个人想法，欢迎友好交流、批评指正~
 
 ### Abstract
 Background + method + results + conclusion

@@ -3,7 +3,7 @@ layout: post
 title: Kaggle第一次比赛心得
 date: 2023-01-03
 Author: Ursula
-tags: [Kaggle, DL]
+tags: [ML]
 comments: true
 --- 
 

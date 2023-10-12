@@ -3,7 +3,7 @@ layout: post
 title: 软工项目心得
 date: 2023-01-03
 Author: Ursula 
-tags: [Django, 项目]
+tags: [项目]
 comments: true
 toc: true
 --- 
